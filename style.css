@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #391f76; /*#412486;*/
+    color: white;
+}
+
+.highlight {
+    color: #d1cfe2;
+}
+
+.presentation {
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.presentation__content img {
+    width: 30%; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção original */
+    max-width: 200px; /* Define um limite máximo */
+    aspect-ratio: 1 / 1; /* Mantém a proporção 1:1 (quadrado perfeito) */
+    object-fit: cover; /* Garante que a imagem não distorça */
+    border-radius: 50%;
+}
+
+.presentation__content {
+    width: 615px;
+}
+
+.presentation__content__title {
+    /* color: #ffcc00; */
+    color: #c9a227;
+    font-size: 48px;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.presentation__content__text {
+    /* color: #878787; */
+    color: #d1cfe2;
+    font-size: 16px;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* .presentation__content, 
+.presentation__project {
+    width: 100%; /* Para telas menores, ocupa toda a largura 
+} */
+
+@media (min-width: 768px) { /* A partir de 768px, ficam lado a lado */
+    .presentation {
+        flex-direction: row;
+    }
+
+    .presentation__content,
+    .presentation__project {
+        width: 48%; /* Divide o espaço */
+    }
+}
+
+.presentation__project {
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+    gap: 40px; /* Espaçamento entre os itens */
+    font-size: 20px;
+    font-family: "Inter Tight", sans-serif;
+}
+
+/* Efeito iluminado ao passar o mouse */
+.presentation__project:hover {
+    /* background-color: rgba(81, 45, 168, 0.2); Fundo iluminado */
+    text-shadow: 0px 0px 10px rgba(81, 45, 168, 0.5); /* Brilho ao redor */
+}
+
+.presentation {
+    margin: 10%;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos quebrem de linha */
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Para telas grandes: mantém lado a lado */
+@media (min-width: 768px) { 
+    .presentation {
+        flex-direction: row;
+    }
+
+    .presentation__content,
+    .presentation__project {
+        width: 48%; /* Divide o espaço igualmente */
+    }
+}
+
+/* Para telas pequenas: empilha os elementos */
+@media (max-width: 767px) { 
+    .presentation {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .presentation__content, 
+    .presentation__project {
+        width: 100%; /* Ocupa toda a largura */
+    }
+}
+
+
