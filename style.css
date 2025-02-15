@@ -39,7 +39,7 @@ body {
 .presentation__content__title {
     /* color: #ffcc00; */
     color: #c9a227;
-    font-size: 48px;
+    font-size: 46px;
     font-family: "Inter Tight", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
@@ -54,6 +54,8 @@ body {
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
+    margin-bottom: 16px; /* Adiciona margem */
+    line-height: 1.6; /* Melhora a legibilidade */
 }
 
 /* .presentation__content, 
