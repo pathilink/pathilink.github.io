@@ -225,6 +225,10 @@ ul {
     flex-grow: 1;
 }
 
+.cert-info a:hover {
+    color: var(--tiffany);
+}
+
 .cert-info h3 {
     color: var(--primary);
     font-size: 1.25rem;
