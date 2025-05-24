@@ -157,6 +157,10 @@ ul {
     margin-bottom: 1rem;
 }
 
+.project-card a:hover {
+    color: var(--tiffany);
+}
+
 .tags {
     display: flex;
     flex-wrap: wrap;
@@ -179,10 +183,6 @@ ul {
     color: var(--primary);
     font-weight: 500;
     transition: color 0.2s ease;
-}
-
-.github-link:hover {
-    color: var(--secondary);
 }
 
 .github-link svg {
